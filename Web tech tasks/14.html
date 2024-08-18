@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <head>
+    <title>Image Gallery with Borders</title>
+    <style>
+      .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .image-gallery img {
+        width: 200px;
+        height: 150px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .image-gallery figcaption {
+        font-size: 12px;
+        color: #666;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Gallery with Borders</h1>
+    <div class="image-gallery">
+      <figure>
+        <img src="image1.jpg" alt="Image 1">
+        <figcaption>Image 1 Caption</figcaption>
+      </figure>
+      <figure>
+        <img src="image2.jpg" alt="Image 2">
+        <figcaption>Image 2 Caption</figcaption>
+      </figure>
+      <figure>
+        <img src="image3.jpg" alt="Image 3">
+        <figcaption>Image 3 Caption</figcaption>
+      </figure>
+      <figure>
+        <img src="image4.jpg" alt="Image 4">
+        <figcaption>Image 4 Caption</figcaption>
+      </figure>
+      <figure>
+        <img src="image5.jpg" alt="Image 5">
+        <figcaption>Image 5 Caption</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>

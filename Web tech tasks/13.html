@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deactivate Account</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 60%;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Deactivate Account</h2>
+    <p>Are you sure you want to deactivate your account? Deactivating your account will remove your profile and all associated data from our platform.</p>
+    <form>
+      <h3>Reason for Deactivation</h3>
+      <label for="reason">Please select a reason for deactivating your account:</label>
+      <select id="reason" required>
+        <option value="">Select a reason</option>
+        <option value="I no longer use the platform">I no longer use the platform</option>
+        <option value="I'm concerned about my online safety">I'm concerned about my online safety</option>
+        <option value="I'm dissatisfied with the platform">I'm dissatisfied with the platform</option>
+        <option value="Other">Other</option>
+      </select><br><br>
+      <label for="other-reason">If you selected "Other", please specify:</label>
+      <textarea id="other-reason"></textarea><br><br>
+      <h3>Confirm Deactivation</h3>
+      <label for="confirm">Are you sure you want to deactivate your account?</label>
+      <input type="checkbox" id="confirm" required>
+      <label for="confirm">Yes, I'm sure</label><br><br>
+      <h3>Password Confirmation</h3>
+      <label for="password">Please enter your password to confirm:</label>
+      <input type="password" id="password" required><br><br>
+      <button type="submit">Deactivate Account</button>
+    </form>
+  </div>
+</body>
+</html>

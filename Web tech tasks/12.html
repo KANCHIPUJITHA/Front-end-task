@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 60%;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #a41c1cc0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Course Feedback Form</h2>
+    <form>
+      <h3>Course Information</h3>
+      <label for="course-name">Course Name:</label>
+      <input type="text" id="course-name" required><br><br>
+      <label for="course-id">Course ID:</label>
+      <input type="text" id="course-id" required><br><br>
+      <label for="instructor-name">Instructor Name:</label>
+      <input type="text" id="instructor-name" required><br><br>
+
+      <h3>Overall Feedback</h3>
+      <label for="overall-Feedback">How would you rate your overall satisfaction with the course?</label>
+      <select id="overall-Feedback" required>
+        <option value="">Select a rating</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Fair">Fair</option>
+        <option value="Poor">Poor</option>
+      </select><br><br>
+
+      <h3>Course Content</h3>
+      <label for="course-content">How would you rate the relevance and usefulness of the course content?</label>
+      <select id="course-content" required>
+        <option value="">Select a rating</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Fair">Fair</option>
+        <option value="Poor">Poor</option>
+      </select><br><br>
+      <label for="course-organization">How would you rate the organization and structure of the course content?</label>
+      <select id="course-organization" required>
+        <option value="">Select a rating</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Fair">Fair</option>
+        <option value="Poor">Poor</option>
+      </select><br><br>
+
+      <h3>Instructor Evaluation</h3>
+      <label for="instructor-knowledge">How would you rate the instructor's knowledge of the subject matter?</label>
+      <select id="instructor-knowledge" required>
+        <option value="">Select a rating</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Fair">Fair</option>
+        <option value="Poor">Poor</option>
+      </select><br><br>
+      <label for="instructor-communication">How would you rate the instructor's communication skills?</label>
+      <select id="instructor-communication" required>
+        <option value="">Select a rating</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Fair">Fair</option>
+        <option value="Poor">Poor</option>
+      </select><br><br>
+
+      <h3>Comments</h3>
+      <label for="comments">Do you have any additional comments or suggestions about the course?</label>
+      <textarea id="comments"></textarea><br><br>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>
